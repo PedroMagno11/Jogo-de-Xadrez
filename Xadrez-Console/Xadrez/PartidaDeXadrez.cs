@@ -101,7 +101,7 @@ namespace xadrez
 
         public void ValidarPosicaoDeDestino(Posicao origem, Posicao Destino)
         {
-            if (!tab.peca(origem).PodeMoverPara(Destino))
+            if (!tab.peca(origem).MovimentoPossivel(Destino))
             {
                 throw new TabuleiroException("Posição de destino inválida!");
             }
